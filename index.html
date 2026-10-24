@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Bobbexo Global | Market Research, Portfolio and Investment Advisory</title>
+<meta name="description" content="Bobbexo Global provides independent capital market research">
+<link rel="stylesheet" href="style.css">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Merriweather:wght@700&display=swap" rel="stylesheet">
+</head>
+<body>
+<div class="top-bar"></div><div class="gold-bar"></div>
+<nav>
+<div class="logo">BOBBEXO <span>GLOBAL</span></div>
+<ul class="nav-links"><li><a href="#home">Home</a></li><li><a href="#about">About</a></li><li><a href="#services">Services</a></li><li><a href="#research">Research</a></li><li><a href="#contact">Contact</a></li></ul>
+<a href="#contact" class="btn btn-primary">Get Started</a>
+</nav>
+<section id="home" class="hero">
+<div><h1>Clear market research. Confident investment decisions.</h1>
+<p class="sub">Bobbexo Global delivers independent capital market research, portfolio insight and investment advisory for investors who want to understand the market before they act.</p>
+<div style="display:flex;gap:12px"><button class="btn btn-primary" onclick="scrollToId('contact')">Get Started</button><button class="btn btn-outline" onclick="scrollToId('research')">View Latest Market Update</button></div>
+<div class="hero-stats"><div class="stat"><b>Independent</b><span>Research Based</span></div><div class="stat"><b>Risk First</b><span>Downside clear</span></div><div class="stat"><b>Global</b><span>Markets that move</span></div></div>
+</div>
+<div><div class="card" style="background:#0f2140;color:white;border:none"><h3 style="color:#d4aa4a">What we do</h3>
+<div style="margin-top:16px"><div style="padding:14px 0;border-bottom:1px solid rgba(255,255,255,0.1)"><b>Market Research</b><br><span style="color:#a0aec0;font-size:13px">Equities, forex, gold and commodities</span></div>
+<div style="padding:14px 0;border-bottom:1px solid rgba(255,255,255,0.1)"><b>Portfolio Insight</b><br><span style="color:#a0aec0;font-size:13px">Allocation, performance and risks</span></div>
+<div style="padding:14px 0;border-bottom:1px solid rgba(255,255,255,0.1)"><b>Investment Advisory</b><br><span style="color:#a0aec0;font-size:13px">Goals based guidance</span></div>
+<div style="padding:14px 0"><b>Market Updates</b><br><span style="color:#a0aec0;font-size:13px">Regular easy-to-read updates</span></div></div></div></div>
+</section>
+<section class="section section-light"><h2>Why Bobbexo Global</h2><div class="grid-4">
+<div class="card"><div class="icon">🎯</div><h3>Independent thinking</h3><p>Views based on research and evidence.</p></div>
+<div class="card"><div class="icon">💬</div><h3>Plain language</h3><p>Complex markets explained simply.</p></div>
+<div class="card"><div class="icon">⚠️</div><h3>Risk first</h3><p>We show you the downside as clearly as the opportunity.</p></div>
+<div class="card"><div class="icon">🌍</div><h3>Global outlook</h3><p>We follow the markets that move portfolios.</p></div>
+</div></section>
+<section id="about" class="section section-light"><h2>Research you can understand. Advice you can trust.</h2>
+<div style="display:grid;grid-template-columns:1fr 1fr;gap:40px;margin-top:30px"><div><h3>Our story</h3><p>Bobbexo Global was founded on a simple idea: investors deserve research that is honest, clear and useful.</p>
+<h3 style="margin-top:16px">Our mission</h3><p>To give investors the research, insight and guidance they need.</p><h3 style="margin-top:16px">Our vision</h3><p>To become trusted global name in independent research.</p></div>
+<div><div class="team-card"><div class="avatar">AH</div><div><h3>Aqdus Hussain, Founder and CEO</h3><p style="font-size:13px;color:#6b7280">Based in Dubai, UAE. 4 years capital markets experience. Master in Finance and Banking.</p></div></div></div></div></section>
+<section id="services" class="section" style="background:#f8f7f4"><h2>Research, portfolio and advisory services built around you.</h2>
+<div style="display:grid;grid-template-columns:1fr 1fr;gap:30px;margin-top:30px">
+<div class="card"><span class="badge">CAPITAL MARKET RESEARCH</span><h3>Independent research across equities, forex, gold and commodities.</h3></div>
+<div class="card"><span class="badge">PORTFOLIO ANALYSIS</span><h3>Structured review of your investments.</h3></div>
+<div class="card"><span class="badge">INVESTMENT ADVISORY</span><h3>Guidance shaped around your goals.</h3></div>
+<div class="card"><span class="badge">MARKET UPDATES</span><h3>Short regular updates on market moves.</h3><button class="btn btn-primary" style="margin-top:10px" onclick="scrollToId('contact')">Request a Consultation</button></div>
+</div></section>
+<section id="research" class="section section-light"><h2>What moved the market, and what it may mean.</h2>
+<div class="market-grid"><div class="market-card"><div class="tag">EQUITIES</div><h3>Q3 Earnings: Demand signals</h3></div><div class="market-card"><div class="tag">FOREX</div><h3>USD strength and EM flows</h3></div><div class="market-card"><div class="tag">GOLD</div><h3>Gold near highs: Safe haven?</h3></div></div>
+<div style="margin-top:40px;background:#f8f7f4;padding:24px;border-radius:12px;display:flex;gap:16px;flex-wrap:wrap"><input id="newsletterName" placeholder="Name"><input id="newsletterEmail" placeholder="Email"><button class="btn btn-primary" onclick="subscribeNewsletter()">Subscribe</button></div></section>
+<section id="contact" class="section" style="background:#f8f7f4"><div class="contact-wrap"><div><h2>Let us talk about your investments.</h2>
+<form id="contactForm" onsubmit="submitContact(event)"><div class="form-row"><input required name="name" placeholder="Full name"><input required type="email" name="email" placeholder="Email"></div><div class="form-row"><input name="phone" placeholder="Phone"><select name="interest" required><option value="">I am interested in</option><option>Market research</option><option>Portfolio analysis</option><option>Investment advisory</option><option>Other</option></select></div><textarea name="message" rows="4" placeholder="Message" required></textarea><button class="btn btn-primary" type="submit">Send Message</button></form></div>
+<div><div class="card"><h3>What happens next</h3><p><b>1. You send enquiry.</b><br><b>2. We get in touch.</b><br><b>3. We arrange consultation.</b></p><h3 style="margin-top:20px">Contact</h3><p style="font-size:14px">Office: Dubai, UAE<br>Phone: +971 52 855 6764<br>Email: Aqudas92@gmail.com</p></div></div></div></section>
+<footer><div class="footer-grid"><div><div class="logo" style="color:white">BOBBEXO <span style="color:#b78c2a">GLOBAL</span></div><p style="margin-top:12px;font-size:13px">Research · Portfolio · Investment · Advisory</p></div><div><b style="color:white">Links</b><br><br><a href="#home">Home</a><br><a href="#about">About</a><br><a href="#services">Services</a><br><a href="#research">Research</a></div><div><b style="color:white">Legal</b><br><br><a href="#">Privacy</a><br><a href="#">Terms</a><br><a href="#">Risk Disclosure</a></div><div><b style="color:white">Contact</b><br><br><span>+971 52 855 6764</span><br><span>Aqudas92@gmail.com</span></div></div><div class="footer-bottom"><p>© 2026 Bobbexo Global. All rights reserved.</p><p style="margin-top:12px">Risk disclaimer: Information is for general education only, not personal advice. Investing involves risk.</p></div></footer>
+<div id="toast" class="toast"></div>
+<script src="script.js"></script>
+</body>
+</html>
